@@ -2,15 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* :root {
+  --background: chocolate;
+  --foreground: #fff;
+} */
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: rgb(255, 222, 200);
+    --foreground: #040404;
   }
 }
 
@@ -18,6 +18,8 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
 }
 
 @layer utilities {
@@ -25,3 +27,139 @@ body {
     text-wrap: balance;
   }
 }
+
+.logo-h1 {
+  font-family: "Qwitcher Grypen", serif;
+  font-weight: 600;
+}
+.btn {
+  transition: background-color 0.3s ease-out, color 0.3s ease-in;
+}
+
+.btn:hover {
+  background-color: white;
+  color: rgb(85, 84, 83);
+}
+.btn1 {
+  transition: background-color 0.3s ease-out, color 0.3s ease-in,
+    border 0.3s ease-in-out;
+}
+
+.btn1:hover {
+  background-color: rgb(183, 183, 183);
+  color: white;
+  border: 2px solid rgb(183, 183, 183);
+}
+.btn3 {
+  transition: background-color 0.3s ease-out, color 0.3s ease-in;
+}
+
+.btn3:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(7, 7, 7);
+}
+.btn4 {
+  transition: background-color 0.3s ease-out, color 0.3s ease-in;
+}
+
+.btn4:hover {
+  background-color: rgb(222, 100, 18);
+  color: white;
+}
+.btn9 {
+  transition: background-color 0.3s ease-out, color 0.3s ease-in;
+}
+
+.btn9:hover {
+  background-color: rgb(241, 221, 189);
+  color: rgb(86, 52, 2);
+}
+.btn10 {
+  transition: background-color 0.3s ease-out, color 0.3s ease-in;
+}
+
+.btn10:hover {
+  background-color: rgba(190, 128, 28, 0.826);
+  color: rgb(255, 255, 255);
+}
+.btn12 {
+  transition: background-color 0.3s ease-out, color 0.3s ease-in;
+}
+
+.btn12:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(235, 141, 19);
+}
+.text-price {
+  transition: background-color 0.3s ease-out, color 0.3s ease-in;
+}
+
+.text-price:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(95, 95, 95);
+}
+.product {
+  transition: border 0.3s ease-in;
+}
+
+.product:hover {
+  border-bottom: 2px solid brown;
+}
+/* .bag {
+  transition: transfrom 0.3s ease-out;
+}
+
+.bag:hover {
+  transform: translateY(-20px);
+} */
+.textarea {
+  resize: none;
+}
+.icon {
+  transition: background-color 0.3s ease-out, color 0.3s ease-in;
+}
+
+.icon:hover {
+  background-color: chocolate;
+  color: white;
+}
+.navbar {
+  background-color: rgb(114, 114, 114);
+  color: white;
+}
+.footer-p {
+  transition: color 0.2s ease-in;
+}
+
+.footer-p:hover {
+  color: chocolate;
+}
+
+#products:hover {
+  display: flex;
+}
+.tag-rotate {
+  rotate: 360deg;
+}
+.products {
+  display: grid;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto;
+}
+/* .product-img {
+  transition: scale 0.3s ease-in-out;
+  overflow: hidden;
+}
+.product-img:hover {
+  scale: 0.95;
+} */
+
+/* @media (min-width: 768px) and (max-width: 1024px) {
+  .resp {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto auto;
+  }
+} */
