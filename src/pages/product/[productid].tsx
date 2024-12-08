@@ -5,7 +5,6 @@ import Footer from "@/components/Footer";
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../redux/store";
 import { addItem } from "../redux/cartSlice";
-import React from "react";
 import Link from "next/link";
 
 const ProductPage: React.FC = () => {
@@ -28,7 +27,7 @@ const ProductPage: React.FC = () => {
         name: product.name,
         price: product.price,
         image: product.image,
-        quantity: product.quantity,
+        quantity: 1,
       })
     );
   };
