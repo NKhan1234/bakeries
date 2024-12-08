@@ -1,14 +1,14 @@
 // Cart.tsx
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { RootState, AppDispatch } from "./redux/store";
+import { RootState, AppDispatch } from "../redux/store";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import {
   decreaseQuantity,
   increaseQuantity,
   removeItem,
-} from "./redux/cartSlice";
+} from "../redux/cartSlice";
 import Link from "next/link";
 
 const Cart: React.FC = () => {

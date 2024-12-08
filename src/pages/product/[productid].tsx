@@ -3,8 +3,8 @@ import Navbar from "@/components/Navbar";
 import { products } from "../api/hello";
 import Footer from "@/components/Footer";
 import { useSelector, useDispatch } from "react-redux";
-import { RootState } from "../redux/store";
-import { addItem } from "../redux/cartSlice";
+import { RootState } from "../../redux/store";
+import { addItem } from "../../redux/cartSlice";
 import Link from "next/link";
 
 const ProductPage: React.FC = () => {
